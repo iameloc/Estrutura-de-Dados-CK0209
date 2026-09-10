@@ -4,6 +4,7 @@
 void Merge(int A[],int p,int q,int r){
     //entrada: A[p,...,q] e A[q+1,...,r] ordenados
     //saida: A[p,...,r] ordenado
+    //complexidade: O(n)
 
     //criando vetores esquerda(E) e direita(D)
     int E[q-p+1];
@@ -43,6 +44,11 @@ void Merge(int A[],int p,int q,int r){
 }
 
 void MergeSort(int A[],int p,int r){
+//Dividir: quebrar o vetor de tamanho n em 2 vetores de tamanho n/2
+//Conquistar: ordenar subvetores recursivamente
+//Combinar: ordenar vetor a partir dos vetores ordenados
+//complexidade: O(nlgn)
+
     if(p<r){
         int q = (p+r)/2;
         MergeSort(A,p,q);
