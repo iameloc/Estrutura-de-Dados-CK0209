@@ -28,3 +28,12 @@ int main(){
 
     printf("%d",resultado);
 }
+
+//vetor deve estar ordenado
+//dado um vetor A de tamanho n, buscamos por um elemento K
+//caso K esteja no vetor, retorna o indice do elemento K
+//caso não esteja, retorna -1
+
+//complexidade O(lg n), muito boa complexidade
+
+//fazer testes e, a cada teste, descartar metade dos elementos
